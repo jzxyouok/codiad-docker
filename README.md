@@ -20,7 +20,7 @@ well as plugins:
 ```bash
 docker run --name codiad -d --restart=always -p 80:80 \
     -v ${YOUR_WORKSPACE}:/var/www/html/workspace \
-    -v ${CODIAD_CONFIG}:/var/www/html/config.php \
+    -v ${YOUR_CODIAD_CONFIG}:/var/www/html/config.php \
     -v ${YOUR_CODIAD_DATA}:/var/www/html/data \
     -v ${YOUR_CODIAD_PLUGINS}:/var/www/html/plugins \
     -v ${YOUR_CODIAD_THEMES}:/var/www/html/themes \
