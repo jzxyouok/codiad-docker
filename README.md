@@ -18,8 +18,8 @@ docker run --name codiad -d --restart=always -p 80:80 \
     -v ${YOUR_WORKSPACE}:/var/www/html/workspace \
     xiangquan/codiad
 ```
-Professionals are also want to backup their settings, install new themes as
-well as plugins:
+Professionals who want to backup their settings, install new themes as well as
+plugins can mount some more volumes:
 ```bash
 docker run --name codiad -d --restart=always -p 80:80 \
     -v ${YOUR_WORKSPACE}:/var/www/html/workspace \
@@ -29,5 +29,4 @@ docker run --name codiad -d --restart=always -p 80:80 \
     -v ${YOUR_CODIAD_THEMES}:/var/www/html/themes \
     xiangquan/codiad
 ```
-3. Visit the home page to finish the standard installation process.
-4. Add and work on your projects.
+3. Visit the home page to finish the Codiad installation process.
