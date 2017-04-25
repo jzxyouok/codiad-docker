@@ -11,8 +11,6 @@ VOLUME /home/host
 VOLUME /home/data
 
 COPY Codiad-v.2.8.1/ /var/www/html/
-RUN chmod 777 \
-  /var/www/html/workspace \
-  /var/www/html/plugins \
-  /var/www/html/themes \
-  /var/www/html/data
+
+RUN usermod -u 1000 www-data
+RUN usermod -G root www-data
