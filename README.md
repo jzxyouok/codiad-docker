@@ -4,7 +4,10 @@
 Run a Codiad container which serves at port 80.
 
 ## Usage
-1. Run the following command to start the server:
+1. What is Codiad and how to use it? Please refer to
+[http://codiad.com](http://codiad.com).
+
+2. Run the following command to start the server:
 ```bash
 # Let the container host everything.
 docker run --name codiad -d --restart=always -p 80:80 xiangquan/codiad
@@ -26,5 +29,5 @@ docker run --name codiad -d --restart=always -p 80:80 \
     -v ${YOUR_CODIAD_THEMES}:/var/www/html/themes \
     xiangquan/codiad
 ```
-2. Visit the home page to finish the standard installation process.
-3. Add and work on your projects.
+3. Visit the home page to finish the standard installation process.
+4. Add and work on your projects.
