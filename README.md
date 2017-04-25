@@ -8,5 +8,9 @@ Run a Codiad container which serves at port 80.
 2. Visit the server to finish initiation.
 
 ## Hacks
-1. Mount your workspace to /w. Then you can access your projects easily. Make sure it's writable.
-2. Mount additional workspaces or data disks to /w1, /w2, /host, /data, etc as you want.
+1. Mount your workspace to /home/ws. Then you can access your projects easily.
+2. Remember to add www-data to your group, and projects are writable by it:
+
+```usermod -aG www-data $USER```
+3. Mount additional workspaces or data disks to /home/ws1, /home/ws2, /home/host, /home/data, etc as
+you want.
