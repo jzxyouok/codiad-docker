@@ -1,9 +1,9 @@
 #!/bin/bash
 
 WORKSPACE=/your/workspace
-CODIAD_DATA=$(pwd)/data
-CODIAD_PLUGINS=$(pwd)/plugins
-CODIAD_THEMES=$(pwd)/themes
+CODIAD_DATA=$(pwd)/volumes/data
+CODIAD_PLUGINS=$(pwd)/volumes/plugins
+CODIAD_THEMES=$(pwd)/volumes/themes
 
 mkdir -p ${WORKSPACE} ${CODIAD_DATA} ${CODIAD_PLUGINS} ${CODIAD_THEMES}
 
